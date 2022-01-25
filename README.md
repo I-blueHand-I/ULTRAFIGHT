@@ -1,7 +1,7 @@
 # ULTRAFIGHT
-ULTRAFIGHT is an versus video game developed in 2022.  
-In 1974 when maze war, the first online game had just been released, a bug took hold in all computer matrix. Two players were created : Blue and Red. For nearly forty years the two clashed in a relentless fight. Fights always ended in a draw. Until 2022, when they discovered the existence of the golden pixel. It was the source of an unlimited power. The legend says that René Descartes founded the golden Pixel while he was building the pascaline. It was 300 years before the first was released. If one of the players grabbed the pixel, they could annihilate the other in the blink of an eye.
-From time to time, a computing rift opens under the name of ULTRAFIGHT : A gigantic maze in the dark where the golden pixel is housed. The two players compete today in the arena and in her mini-games hoping to recover the golden pixel.
+ULTRAFIGHT is a player vs player video game developed in 2022.  
+In 1974, when Maze War, the first online game had just been released, a bug took hold in every computer matrix. Two players were created: Blue and Red. For nearly forty years the two clashed in a relentless fight. These fights always ended up in a draw, until 2022, when they discovered the existence of the Golden Pixel. It was the source of an unlimited power. The legend says that René Descartes founded the Golden Pixel while he was building the Pascaline. That was 300 years before the first computer was released. If one of the players grabbed the pixel, they could annihilate the other in a blink of an eye.
+From time to time, a computing rift opens, under the name of ULTRAFIGHT: a gigantic maze in the dark where the Golden Pixel is housed. The two players compete today in the arena and its mini-games, hoping to recover the Golden Pixel.
 
 ## Installation
 - Install Processing : www.processing.org/download
@@ -10,7 +10,7 @@ From time to time, a computing rift opens under the name of ULTRAFIGHT : A gigan
 
 ## How it works
 
-ULTRAFIGHT is a hand-made video game developed with processing. The game is pretty simple. Two players are in the maze and they need to grab the golden Pixel in the center and escape from the maze. If one of them grab it and the other catch him, then an ULTRAFIGHT is launched. It's a mini-game. There is a PONG, a DASH, and a FIGHT. If the player which grabbed the golden pixel wins the mini-game, then he will win the game. Otherwise, both players go back into the maze to fight again.
+ULTRAFIGHT is a hand-made video game, developed with Processing. The game is pretty simple. Two players are in the maze and they need to grab the Golden Pixel in the center and escape from the maze. If one of them grabs it and the other catches him, then, an ULTRAFIGHT mini-game is triggered. There is a PONG, a DASH, and a FIGHT. If the player which grabbed the Golden Pixel wins the ULTRAFIGHT, he will have won the game. Otherwise, both players go back into the maze to fight again.
 
 ## Commands
 
