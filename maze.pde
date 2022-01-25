@@ -120,7 +120,7 @@ void GoBacktoMaze() { // fonction qui permet de reinitialiser les paramètres du
   //réinitialisation des valeurs présentes dans le labyrinthe
   RandomMaze = true; // permet de changer de Maze a chaque fois qu'on y retourne//
   GoldenRed = 0;
-  GoldenRed = 0;
+  GoldenBlue = 0;
   Xpixel = 410; //position du pixel d'or
   Ypixel = 400;
   //réinitialisation des valeurs présentes dans le Pong

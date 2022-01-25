@@ -24,7 +24,7 @@ void victory() {
   if (AceBlue == true) {
     fill(blue);
     textFont(f2);
-    text("BLUE PLAYER WIN", width/2-250, height/2);
+    text("BLUE PLAYER WINS", width/2-250, height/2);
     ///display joueurs///
     //joueur bleu///
     players[1].displayFight(loadImage("fight/blue_g.png"), 230, Ypodium + 624);
