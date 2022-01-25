@@ -6,7 +6,7 @@ void explication() {
   textFont(f1);
   fill(208, 187, 98, textAlpha);
   textFade();
-  text("Press space to skip", 545, 50);
+  text("Press space to skip", 590, 50);
   animation();
 }
 //petit animation qui fait apparaitre les explications
