@@ -18,7 +18,7 @@ boolean can_attaqueBlue = false;
 
 void fight () {
   //--------------joueurs---------------//
-  chargement(2, 2);//temps de chargement : mettre les commandes
+  chargement(2, 0);//temps de chargement : mettre les commandes
   if (go) {
     displayPlayers();
     gameplay();
