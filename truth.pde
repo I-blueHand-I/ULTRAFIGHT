@@ -10,13 +10,18 @@ boolean finBlue;
 float xBgTruth = 0;
 float transparency = 255;
 //variable pour les credit timer
-int xCredit; 
+int xposRectEnd = -500;
+//final pour que le pixel violet monte//
+boolean _upEnd;//déplacement pixel violet//
+boolean _upEnd1;//déplacement pixel violet//
+float yposPurple = 400;
 
 
 void Truth() {
   strokeWeight(3); //contour de la fenetre de chargement en GOLD
   stroke(gold);
-  chargement(2, 2);
+  chargement(2, 0);
+  println(_upEnd);
   if (go) {
     displayPlayers();
     //invoquer fonction qui permet aux joueurs de réaliser le secret 
@@ -65,12 +70,11 @@ void Truth() {
     players[1].dirX = 2;
     players[1].dirY = 2;
     displayMazePlayers = false;
-    TimerCredit();
   }
 }
 
 void PositionPlayers() {
-  Xpixel = 417;
+  Xpixel = 410;
   Ypixel = 400;
   fill(0);
   stroke(gold);
@@ -84,29 +88,25 @@ void PositionPlayers() {
     strokeWeight(1);
     stroke(gold);
     fill(purple);
-    rect(417, 400, 30, 30);
+    rect(410, yposPurple, 30, 30);
+    if (_upEnd == true && _upEnd1 == true )moveUpPurple();
+    if (yposPurple <= 195)run=7;
   }
 }
-
-void TimerCredit() {
-  xCredit += 5;
-  println(xCredit);
-  if (xCredit >= 19000) {
-    run = 7;
-  }
+void moveUpPurple() {//faire bouger le pixel violet à deux//
+  yposPurple  = yposPurple - 0.15;
 }
-
-void credit() {
-  xCredit += 5;
+void credit() { //crédit de fin du jeu 
   fill(0);
-  rect(0, 0, 860, 780);
-  if ( xCredit >= 19800) {
+  rect(xposRectEnd, 0, 860, 780);
+  xposRectEnd += 10;
+  if (xposRectEnd >= 500) {
     textFont(f1);
     fill(gold);
-    text("music & developping\nby Hugo Bijaoui", width/2 -100, height/2);
+    text("music & developing\nby Hugo Bijaoui", width/2 -100, height/2);
+    text("Pour Raph", 700, 730);
   }
-  if (xCredit >= 20000)text("Pour Raph", 700, 730);
-  if (xCredit >= 21000) {
+  if (xposRectEnd >= 2500) {
     fill(0);
     rect(0, 0, 860, 780);
   }

@@ -9,6 +9,8 @@ int scoreB = 0;
 void pong() {
   chargement(2, 2); //temps de chargement : mettre les commandes
   PONG.play();
+  explicationPong();
+  
   //println(countChargement);
   if (go) {//une fois le chargement terminé//
     displayPlayers();
@@ -96,7 +98,7 @@ void accel() {
 }
 
 void winPong() {
-  if (scoreR >= 11) {
+  if (scoreR >= 7) {
     go = false;
     winRed = true;
     if (GoldenRed ==1 && winRed == true) {
@@ -107,7 +109,7 @@ void winPong() {
       winRed = false;
     }
   }
-  if (scoreB >= 11) {
+  if (scoreB >= 7) {
     go = false;  
     winBlue = true;
     if (GoldenBlue ==1 && winBlue == true) {

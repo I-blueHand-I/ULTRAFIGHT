@@ -23,6 +23,7 @@ void dash() {
   chargement(2, 2);
   DASH.play();
   PONG.pause();
+  explicationDash();
   if (go) {
     displayPlayers();
     background(0);

@@ -24,7 +24,7 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
 //variable for switch windows
-int run= 4;
+int run= 7;
 //variable pour le background principale 
 int xBg = 0;
 //////---------------variables de couleurs pour le jeu--------------//
@@ -154,8 +154,8 @@ void draw() {
     music();
     //-------PLAY AGAIN------------------///
     if (play_again) {     
-      if (keyPressed) {  
-        if (key ==' ')run = 0;
+      if (keyPressed && key ==' ') {  
+        run = 0;
         goBackMaze = true;   
         AceRed = false;
         AceBlue = false;
@@ -228,6 +228,9 @@ void keyPressed() {
       if (key == 'l') _squatBlue = true;
     }
   } 
+  ///specialement pour le secret////
+  if (key =='z')_upEnd = true;
+  if (key=='o')_upEnd1 = true;
   //----------------------------------------------//
 }
 void keyReleased() {
@@ -250,6 +253,10 @@ void keyReleased() {
     if (key == 's') _squatRed = false;
     if (key == 'l') _squatBlue = false ;
   }
+  //specialement pour le secret//
+  if (key =='z')_upEnd = false;
+  if (key=='o')_upEnd1 = false;
+  
   //-------------------------------------//
 }
 //fonction switch music//

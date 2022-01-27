@@ -4,8 +4,11 @@ int Ypodium2 = height+400 ;//2ème
 //boolean play again
 boolean play_again = false;
 
+
 void victory() {
   background(0);
+  println(AceRed);
+  AceRed = true;
   //permet d'invoquer les podiums///
   podium1();
   podium2();

@@ -20,6 +20,7 @@ boolean goBackMaze = false;
 
 void maze() {
   chargement(2, 2);//chargement avec argument : vitesse = 2 et nombre de répétition = 3
+  explicationMze(); //explication des regles du maze 
   Xchargement = 265;//remettre chargement au milieu pendant le temps
   if (go) {
     maze=loadImage("maze/maze00"+RandomMazeImg+".JPG");
@@ -39,10 +40,16 @@ void maze() {
     if (_down)players[0].moveDownMaze();
     if (_left)players[0].moveLeftMaze();
     if (_right)players[0].moveRightMaze();
+    //vitesse du joueur rouge//
+    players[0].dirX = 3;//le personnage rouge est ralenti
+    players[0].dirY = 3;
     //joueur bleu
     if (_up2)players[1].moveUpMaze(); 
     if (_down2)players[1].moveDownMaze();  
     if (_left2)players[1].moveLeftMaze();  
+    //vitesse du joueur bleu
+    players[1].dirX = 5;//le personnage rouge est ralenti
+    players[1].dirY = 5;
     if (_right2)players[1].moveRightMaze();
     countChargement = 0; 
     displayMazePlayers = false; 
@@ -56,9 +63,10 @@ void GoldenPixel() {
   noStroke();
   //collision avec le pixels d'or et permet aux joueur de le récuprer
   for (int i =0; i<2; i++) {
-    color leftColor = get((int(players[i].xpos)-1 ), (int(players[i].ypos)+i));
-    color rightColor = get((int(players[i].xpos + 20)), (int(players[i].ypos)+20+i));
-    if (( leftColor == color(208, 187, 98)  || ( rightColor == color(208, 187, 98)))) {
+    if (players[i].xpos +20 >= Xpixel && 
+      players[i].xpos <= Xpixel +15 && 
+      players[i].ypos +20 >= Ypixel && 
+      players[i].ypos <= Xpixel +15) {
       Xpixel = newX;
       Ypixel = newY;
       if (i==0) {
@@ -151,9 +159,9 @@ void GoBacktoMaze() { // fonction qui permet de reinitialiser les paramètres du
   displayDashPlayers = true;
   displayFightPlayers = true;
   //reinit obstcales 
-  for (int i = 0; i <9; i++){
-  obstacles[i].X = height/3;
-  obstacles[i].Y = height/3;  
+  for (int i = 0; i <9; i++) {
+    obstacles[i].X = height/3;
+    obstacles[i].Y = height/3;
   }  
   //reinit victory//
   Ypodium = height/2;
