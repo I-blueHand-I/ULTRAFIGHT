@@ -99,14 +99,11 @@ void credit() { //crédit de fin du jeu
   fill(0);
   rect(xposRectEnd, 0, 860, 780);
   xposRectEnd += 10;
-  if (xposRectEnd >= 500) {
+  if (xposRectEnd >= 0) {
+    xposRectEnd = 0;
     textFont(f1);
     fill(gold);
     text("music & developing\nby Hugo Bijaoui", width/2 -100, height/2);
     text("Pour Raph", 700, 730);
-  }
-  if (xposRectEnd >= 2500) {
-    fill(0);
-    rect(0, 0, 860, 780);
   }
 }

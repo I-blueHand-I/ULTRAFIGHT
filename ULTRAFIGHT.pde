@@ -22,7 +22,7 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
 //variable for switch windows
-int run= 0;
+int run= 6;
 //variable pour le background principale 
 int xBg = 0;
 //////---------------variables de couleurs pour le jeu--------------//
@@ -118,7 +118,7 @@ void setup() {
 }
 void draw() {
   fill(0);// mettre un rectangle plutot qu'un background pour le déplacer si besoin
-  rect(xBg, 0, 860, 780);
+  rect(xBg, 0, 858, 780);
   switch(run) {
   case 0:
     menu();
