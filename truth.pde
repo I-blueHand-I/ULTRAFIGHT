@@ -20,8 +20,7 @@ float yposPurple = 400;
 void Truth() {
   strokeWeight(3); //contour de la fenetre de chargement en GOLD
   stroke(gold);
-  chargement(2, 0);
-  println(_upEnd);
+  chargement(2, 2);
   if (go) {
     displayPlayers();
     //invoquer fonction qui permet aux joueurs de réaliser le secret 

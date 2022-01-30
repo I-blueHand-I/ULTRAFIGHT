@@ -121,7 +121,7 @@ void winPong() {
       winBlue = false;
     }
   }
-  if (scoreB == 7 && scoreR == 7) {
+  if (scoreB == 5 && scoreR == 5) {
     key0 = true;
     winRed = false;//reinit le jeu pong
     winBlue = false;//reinit le jeu pong

@@ -11,10 +11,8 @@
 //*************************////////////////  ///-----------------------------//
 //***************************************************************************//
 //thigs to do : 
-//debugger labyrinth rouge qui traverse les murs
-//details : blur effect sur le pong //musique sur les différents jeux
-//changer le labyrinth quand goBacktoMaze//
-//fin secrète//
+//details : blur effect sur le pong 
+//gobacktomaze : remetre rouge ralenti 
 
 import ddf.minim.*;
 import ddf.minim.analysis.*;
@@ -24,7 +22,7 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
 //variable for switch windows
-int run= 7;
+int run= 0;
 //variable pour le background principale 
 int xBg = 0;
 //////---------------variables de couleurs pour le jeu--------------//
@@ -109,6 +107,13 @@ void setup() {
   }
   obstacles[7].Xwidth = 20;
   obstacles[7].Yheight = 20;
+  //vitesse joueur rouge et bleu dans le labyrinth
+  //vitesse du joueur rouge//
+  players[0].dirX = 3;//le personnage rouge est ralenti
+  players[0].dirY = 3;
+  //vitesse du joueur bleu
+  players[1].dirX = 5;
+  players[1].dirY = 5;
   //---------------------------------------------------------------------------//
 }
 void draw() {
@@ -161,6 +166,9 @@ void draw() {
         AceBlue = false;
         keyPressed = false; //pemret de revenir au menu sans retourner des les explications directement
         play_again = false;
+        key0 = false;//clef du PONG
+        key1 = false;//clef du DASH
+        key2 = false;//clef du FIGHT
       }
     }
     break;
@@ -194,6 +202,7 @@ void draw() {
 }
 void randomGame() { //fonction qui permet de tirer au sort un ULTRAFIGHT : PONG/DASH/FIGHT
   run = int(random(2, 5));
+  //run =3;
 }
 void randomMaze() {
   RandomMazeImg = int(random(0, 14));
@@ -256,7 +265,7 @@ void keyReleased() {
   //specialement pour le secret//
   if (key =='z')_upEnd = false;
   if (key=='o')_upEnd1 = false;
-  
+
   //-------------------------------------//
 }
 //fonction switch music//

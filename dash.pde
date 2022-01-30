@@ -83,7 +83,7 @@ void collide() { //fonction de collision entre joueur et obstcales//
         players[i].ypos <= (obstacles[j].Y + obstacles[j].Yheight)) {
         // si le joueur rouge touche les obstacles 
         if (i == 0) { 
-          winRed = true;
+          winBlue = true;
           go1 = false;
           go = false;
           if (GoldenBlue ==1 && winBlue == true) {
