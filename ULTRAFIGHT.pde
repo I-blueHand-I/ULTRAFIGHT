@@ -11,7 +11,6 @@
 //*************************////////////////  ///-----------------------------//
 //***************************************************************************//
 //thigs to do : 
-//details : blur effect sur le pong 
 //gobacktomaze : remetre rouge ralenti 
 
 import ddf.minim.*;
