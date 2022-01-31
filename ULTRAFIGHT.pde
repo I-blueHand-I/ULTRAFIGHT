@@ -101,8 +101,8 @@ void setup() {
     obstacles[i]= new obstacle(width/3, height/3);
     obstacles[i].Xwidth = random(20, 200);
     obstacles[i].Yheight = random(20, 200);
-    obstacles[i].directionX = random(-3, 6);
-    obstacles[i].directionY = random(-3, 6);
+    obstacles[i].directionX = random(-3, 4);
+    obstacles[i].directionY = random(-3, 4);
   }
   obstacles[7].Xwidth = 20;
   obstacles[7].Yheight = 20;

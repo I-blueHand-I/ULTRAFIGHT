@@ -31,7 +31,7 @@ void fight () {
 }
 void gameplay() {
   background(fight);
-  Timer(3);//décompte avant le fight
+  Timer(4);//décompte avant le fight
   timerY = width/3 ; //display timer au milieu de l'écran
   for (int i = 0; i<2; i++) {
     //players[i].ypos = 500; //bon niveaux en Y pour les joueurs//

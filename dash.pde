@@ -15,8 +15,14 @@ class obstacle {
     fill(208, 187, 98); // COULEUR OR  
     rect(X, Y, Xwidth, Yheight); //parametres que l'on peut modifier dans le setup
     noStroke();
-    if (Y-Yheight > height-Yheight*2 || Y < 0) directionY = -directionY; //rebond des obstacles en  Y
-    if (X-Xwidth > width-Xwidth*2 || X < 0) directionX = -directionX;//rebond des obstacles en X
+    if (Y-Yheight > height-Yheight*2 || Y < 0) {
+      directionY = -directionY;
+      directionY *= 1.07;//gradient qui permet de faire accelrer les blocks
+    } //rebond des obstacles en  Y
+    if (X-Xwidth > width-Xwidth*2 || X < 0) { 
+      directionX = -directionX;
+      directionX *= 1.07;
+    }//rebond des obstacles en X
   }
 }
 void dash() {

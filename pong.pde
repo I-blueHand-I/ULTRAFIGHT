@@ -15,7 +15,7 @@ void pong() {
   if (go) {//une fois le chargement terminé//
     displayPlayers();
     background(0); //permet initialiser un nouveau fond///
-    Timer(2);
+    Timer(4);
     timerY = height/2; // display timer au milieu de l'écran
     balldisplay();
     //display player for the pong 

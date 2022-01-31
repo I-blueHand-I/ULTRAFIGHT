@@ -56,7 +56,7 @@ void Timer(int time) { //décompte avant les mini-jeux
   xposTimer -= time;
   textFont(f2); //décompte visuel pour voir quand le jeu va se lancer
   fill(gold);
-  text(xposTimer/100, timerX, timerY);
+  text(xposTimer/150, timerX, timerY);
   //activation de la bool 
   if (xposTimer <= 0) {
     go1 = true; //activer la boolean qui permet de lancer les jeux
