@@ -50,3 +50,12 @@ ULTRAFIGHT is a hand-made video game, developed with Processing. The game is pre
 
 
 Don't forget to cooperate
+
+This project has been exposed at the Elia Art Galery in Paris on the 5 and 6 of june 2021.
+More than 150 games were played. 150 drawings were drawn and each are different. 
+
+![montage](https://user-images.githubusercontent.com/91726252/142781797-6e3b89ab-7480-479d-b069-1ed79aae8382.png)
+![montage3](https://user-images.githubusercontent.com/91726252/142781803-d69ad6e4-2818-435a-abb6-0da0ced6365a.png)
+![montage2](https://user-images.githubusercontent.com/91726252/142758895-6b32231d-7875-4817-8c37-f86cd06c7a4a.png)
+
+Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
