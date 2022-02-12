@@ -20,7 +20,7 @@ import ddf.minim.spi.*;
 import ddf.minim.ugens.*;
 
 //variable for switch windows
-int run= 0;
+int run= 7;
 //variable pour le background principale 
 int xBg = 0;
 //////---------------variables de couleurs pour le jeu--------------//
